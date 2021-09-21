@@ -16,7 +16,6 @@
     --txt-center: center;
     --primary-white: #ffffff;
     --secondary-white: #fafafae0;
-
 }
 
 
@@ -88,23 +87,20 @@ nav h3, nav li {
 .form-container {
     display: grid;
     place-content: center;
-    background-image: url(./imgs/keys-mobile.jpg);
+    background-image: url(./imgs/header-img.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: var( --txt-center);
-    padding: 15px;
+    padding: 55px;
 }
 /* put this class in desktop styles */
 .form-wrapper {
-    /* width: 700px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.288);
-    padding: px; */
+    color: var(--primary-white);
 }
 
 .form-container h2 {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .input-container-1,
@@ -115,14 +111,18 @@ nav h3, nav li {
 label {
     display: inline-block;
     margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
 input {
-    padding: 5px;
+    padding: 10px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
 }
 
 .form-btn-container {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .form-btn {
@@ -360,6 +360,18 @@ footer a {
 
     .form-container {
         height: 100vh;
+        padding: 15px;
+    }
+
+    .form-container h2 {
+        font-size: 2rem;
+    }
+
+    .form-wrapper {
+        background-color: rgba(0, 0, 0, 0.199);
+        padding: 30px 190px;
+        color: var(--primary-white);
+        border-radius: 10px;
     }
 
     .cards-container {

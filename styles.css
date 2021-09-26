@@ -8,7 +8,7 @@
     list-style: none;
 }
 
-/* vARIABLES */
+/* VARIABLES */
 
 :root {
     --primary-blue: #318ce7;
@@ -16,6 +16,11 @@
     --txt-center: center;
     --primary-white: #ffffff;
     --secondary-white: #fafafae0;
+    --btn-transform: scale(0.98);
+    --btn-transition: transform 0.2s ease-in-out;
+    --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    --card-transition: transform 0.2s ease-in;
+    --card-transform: translateY(-5px);
 }
 
 
@@ -83,7 +88,6 @@ nav h3, nav li {
     transform: translateX(0px);
 }
 
-/* put display grid center in desktop styles */
 .form-container {
     display: grid;
     place-content: center;
@@ -94,7 +98,7 @@ nav h3, nav li {
     text-align: var( --txt-center);
     padding: 55px;
 }
-/* put this class in desktop styles */
+
 .form-wrapper {
     color: var(--primary-white);
 }
@@ -131,6 +135,11 @@ input {
     color: var(--primary-white);
     padding: 6px 30px;
     border-radius: 3px;
+    transition: var(--btn-transition);
+}
+
+.form-btn:hover {
+    transform: var(--btn-transform);
 }
 
 /* Welcome Section */
@@ -162,6 +171,11 @@ input {
 .welcome-btn-container {
     text-align: var( --txt-center);
     margin: 25px 0px 0px 0px;
+    transition: var(--btn-transition);
+}
+
+.welcome-btn-container:hover {
+    transform: var(--btn-transform);
 }
 
 .welcome-section-btn {
@@ -225,6 +239,11 @@ main h2 {
     padding: 6px;
     border-radius: 3px;
     color: var(--primary-white);
+    transition: var(--btn-transition);
+}
+
+.card-btn:hover {
+    transform: var(--btn-transform);
 }
 
 /* Testimonial Section */
@@ -255,6 +274,11 @@ main h2 {
     background: var(--gradient-color);
     padding: 12px;
     border-radius: 8px;
+    transition: var(--card-transition);
+}
+
+.testimonial-box:hover {
+    transform: var(--card-transform);
 }
 
 .testimonial-box h4, 
